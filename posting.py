@@ -29,12 +29,11 @@ def get_blogger_service_obj() :
     drive_service = build('drive','v3',credentials = creds)
     return drive_service, blog_service
 
-drive_handler, blog_handler = get_blogger_service_obj()
 
-keyword = '자동포스팅' #태그
-blogger_title = '오 감동적이다' #블로그제목
-content = '이야 이게 되네?' #내용
-
+#keyword = '자동포스팅' #태그
+#blogger_title = '오 감동적이다' #블로그제목
+#content = '이야 이게 되네?' #내용
+'''
 data = {
     'content':content,
     'title' : blogger_title,
@@ -43,9 +42,10 @@ data = {
         'id' : BLOG_ID,
     },}
 
-posts = blog_handler.posts()
-
-res = posts.insert(blogId = BLOG_ID, body = data, isDraft = False, fetchImages = True).execute()
-res #결과물
-
+#실행하는데 필요한 파라미터들
+#drive_handler, blog_handler = get_blogger_service_obj()
+#posts = blog_handler.posts()
+#res = posts.insert(blogId = BLOG_ID, body = data, isDraft = False, fetchImages = True).execute()
+#res #결과물
+'''
 
