@@ -11,7 +11,7 @@ def get_today():
 
 def get_keywords():
     #오늘 날짜를 우선 점검함 : 01, 11 , 21일때만 상품리스트를 가져오게
-    if get_today() == '09' or get_today() == '11' or get_today() == '21':
+    if get_today() == '1' or get_today() == '11' or get_today() == '21':
     #창 열기 쇼핑인사이트
         chrome_options = webdriver.ChromeOptions()
         driver = webdriver.Chrome(service = Service(ChromeDriverManager().install()), options = chrome_options )

@@ -59,7 +59,7 @@ def posting(content, title, keyword) : #내용, 상품명, 태그
 
 today = ND.get_today()
 while True:
-    if today == '10' or today == '11' or today == '21':
+    if today == '1' or today == '11' or today == '21':
         keywords = ND.get_keywords()
         df = cp.get_coupang(keywords)
         for i in range(len(df)):
